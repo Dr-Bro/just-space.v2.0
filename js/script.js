@@ -9,10 +9,10 @@ function changeTitle(){
 		case 50:  curSlide = 2; break;
 		case 100: curSlide = 3; break;
 	}
-	$(".text-1").css({"opacity":"0"});
-	$(".text-2").css({"opacity":"0"});
-	$(".text-3").css({"opacity":"0"});
-	$(".text-"+curSlide).css({"opacity":"1"});
+	$(".text-1").css({"opacity":"0","display":"none"});
+	$(".text-2").css({"opacity":"0","display":"none"});
+	$(".text-3").css({"opacity":"0","display":"none"});
+	$(".text-"+curSlide).css({"opacity":"1","display":"inline-block"});
 }
 
 $(document).ready(function(){
