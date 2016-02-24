@@ -2,6 +2,7 @@
 @white: #fff;
 @orange: orange;
 @lightorange: #e6a122;
+@text-color: #767676;
 
 body{
 	height: 5000px;
@@ -138,6 +139,54 @@ header{
 }
 
 
+div.services{
+	padding: 50px;
+	span{
+		text-align: center;
+		h1{
+			padding: 50px;
+		}
+	}
+	section{
+		display: inline-block;
+		width: 33%;
+		text-align: center;
+		h2{
+			font-size: 20px;
+			transition: all .3s ease-in-out;
+			&:hover{
+				color:rgba(39, 201, 39, 0.64);
+			}
+		}
+		p{
+			color: @text-color;
+		}
+		&:hover{
+			.fa-circle{
+				background-color:rgba(39, 201, 39, 0.64);
+				color: rgba(39, 201, 39, 0);
+			}
+			.fa-stack-1x{
+				color: @white;
+			}
+		}
+
+	span{
+		.fa-circle{
+			border: solid 1px;
+			border-color: rgba(195, 176, 146, 0.79);
+			border-radius: 81px;
+			color: @white;
+			background-color: @white;
+		}
+		.fa-stack-1x{
+			color: rgba(39, 201, 39, 0.93);
+			}
+		}
+	}
+}
+
+
 div.blog{
 	text-align: center;
 	padding: 60px;
@@ -159,7 +208,7 @@ div.blog{
 		}
 	}
 	article{
-		color: #767676;
+		color: @text-color;
 		h3{
 			color:@lightorange;
 			transition: all .3s ease-in-out;
