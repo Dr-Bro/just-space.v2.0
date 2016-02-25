@@ -4,6 +4,11 @@
 @lightorange: #e6a122;
 @text-color: #767676;
 
+@font-face {
+    font-family: Homemade Apple;
+    src: url(fonts/HomemadeApple.ttf);
+   }
+
 body{
 	height: 5000px;
 	margin: 0;
@@ -186,6 +191,45 @@ div.services{
 	}
 }
 
+
+div.reviews{
+	height: 400px;
+	text-align: center;
+	background-color: #8c7620;
+	padding: 50px;
+
+	span{
+		text-align: center;
+		color: @white;
+		h2{
+			padding-bottom: 50px;
+		}
+	}
+	div{
+		display: inline-block;
+		width: 25%;
+		background-color: @white;
+		height: 270px;
+		border-radius: 10px;
+
+		section{
+			text-align: justify;
+			padding: 20px;
+			color: @text-color;
+		}
+
+		aside{
+			float: left;
+			padding: 25px;
+			font-family: 'Homemade Apple';
+			color: #404040;
+		}
+
+		img{
+			border-radius: 35px;
+		}
+	}
+}
 
 div.blog{
 	text-align: center;
